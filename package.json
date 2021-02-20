@@ -1,0 +1,23 @@
+{
+  "name": "neboprokic-dicom-anonymizer",
+  "version": "0.1.0",
+  "description": "DICOM images anonymizer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "neboprokic",
+  "license": "MIT",
+  "build": {
+    "appId": "neboprokic.dicom.anonymizer"
+  },
+  "devDependencies": {
+    "electron": "^11.2.3",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "dicom-parser": "^1.8.7",
+    "glob": "^7.1.6"
+  }
+}

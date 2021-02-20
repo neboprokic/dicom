@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DICOM anonimizator</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+  </head>
+  <body style="background: white">
+    <h1>DICOM anonimizator</h1>
+
+    <div id="notification">izaberite fajlove za anonimizaciju</div>
+    <br />
+    <button id="selectBtn">izaberite folder</button>
+    <br />
+
+    <p>mozete specificirati proizvoljne vrednosti anonimiziranih podataka</p>
+    <div>
+      <label for="name">ime pacijenta</label>
+      <input id="name" placeholder="Anonimni" maxlength="9" />
+    </div>
+    <div>
+      <label for="id">ID pacijenta</label>
+      <input id="id" placeholder="1234567" maxlength="7" />
+    </div>
+    <div>
+      <label for="birthday">datum rodjenja pacijenta</label>
+      <input id="birthday" placeholder="22031963" maxlength="8" />
+    </div>
+    <div>
+      <label for="sex">pol pacijenta</label>
+      <input id="sex" placeholder="M" maxlength="1" />
+    </div>
+
+    <br />
+    <button id="submitBtn" style="display: none">
+      anonimizuj izabrane fajlove
+    </button>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
